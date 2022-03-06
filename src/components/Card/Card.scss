@@ -1,0 +1,46 @@
+div.card {
+  position: relative;
+
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+
+  input.card-img {
+    max-width: 100%;
+
+    display: block;
+
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  // when the card is not flipped
+  input.front {
+    position: absolute;
+
+    transition: all ease-in-out 0.2s;
+    // hide front side
+    transform: rotateY(90deg);
+  }
+
+  input.back {
+    transition: all ease-in-out 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  // when the card is flipped
+  div.flipped {
+    input.front {
+      // show front side
+      transform: rotateY(0deg);
+      transition-delay: 0.3s;
+    }
+    input.back {
+      // hide back side
+      transform: rotateY(90deg);
+      transition-delay: 0s;
+    }
+  }
+}

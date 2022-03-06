@@ -1,0 +1,22 @@
+button.btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  font-weight: bold;
+
+  margin-top: 20px;
+  padding: 8px 10px;
+
+  border-radius: 4px;
+  border: 2px solid #fff;
+
+  outline: none;
+
+  background: none;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: #f2994a;
+    background: #fff;
+  }
+}
